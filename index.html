@@ -4,7 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaura Lok Fashoin</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font starrt -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- google font end -->
+
+<style>
+    .font-bebas{
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .font-roboto{
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+
 </head>
 <body>
     <header class="bg-neutral-300">
@@ -17,7 +37,7 @@
                 <img class="w-96" src="./icons/logo.png" alt="">
             </div>
 
-            <div>
+            <div class="font-roboto">
                 <a class="mx-5 text-black text-base font-medium" href="">Home</a>
 
                 <a class="mx-5 text-black text-base font-medium" href="">Product</a>
@@ -33,10 +53,29 @@
 
         <!-- banner section start -->
 
-        <div>
+        <div class="flex items-center justify-evenly">
+
+            <div class="border-orange-400 border-spacing-2">
+
+                <h1 class="text-slate-600 text-7xl font-normal  font-bebas"> <span class="text-amber-400">Be the Penguins</span> <br>
+                    of Winter</h1>
+
+                <p class="font-normal text-base leading-6 my-5 fonnt-roboto ">Lorem Ipsum is simply dummy text of the printing <br>
+                        and typesetting industry.</p>
+
+                        <button class="text-white text-base font-medium py-4 px-9 rounded-xl uppercase bg-lime-500 font-roboto"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                          </svg>
+                          BUY NOW</button>
+            </div>
+
+            <div class="my-20">
+                <img src="./images/model.png" alt="">
+            </div>
 
 
-            
+
         </div>
 
 
@@ -44,7 +83,42 @@
 
     </header>
 
-    <main>
+    <main class="max-w-7xl  mx-auto">
+
+        <!-- woman jacket container start -->
+
+        <section class="py-12">
+            <h3 class="text-5xl font-bebas text-center text-orange-200">W0Man Jacket</h3>
+            <!-- jacket box -->
+            <div class="w-96 bg-white rounded-2xl shadow-lg">
+                <!-- jackt-1 -->
+                <div class="font-roboto">
+                   <div class="bg-slate-300 p-5 rounded-2xl w-80">
+                    <img class="max-w-md" src="./images/jacket-1.png" alt="">
+                   </div>
+                    <h4 class="text-2xl font-bold">Yellow Coat Jacket </h4>
+                    <p class="font-medium text-4xl">Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry.</p>
+                       <div class="flex justify-between">
+                        <!-- button prices -->
+                        <div>
+                            <h3 class="font-black text-4xl"> $234</h3>
+                           </div>
+                           <div>
+                            <button class="text-white text-base font-medium py-4 px-9 rounded-xl uppercase bg-lime-500 font-roboto"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                              </svg>
+                              BUY NOW</button>
+                           </div>
+                       </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- man jacket container end -->
 
     </main>
 
